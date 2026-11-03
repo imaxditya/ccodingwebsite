@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+     <h3>Question 1</h3>
+    <pre>Write a program of recursion and display the output.</pre>
+<h3>Coding</h3>
+    <pre>#include stdio.h
+#include conio.h
+#include dos.h
+int x=1;
+void fun()
+{
+if(x==5)
+{
+printf("%d",x);
+x++;
+fun();
+}
+printf("A");
+}
+void main()
+{
+clrscr();
+fun();
+delay(3000);
+}
+</pre>
+
+<h3>Output</h3>
+    <pre>12345AAAAAA </pre>
+
+         <h3>Question 2</h3>
+    <pre>Write a program of recursion with global variable and display the output.</pre>
+<h3>Coding</h3>
+    <pre>#include stdio.h
+#include conio.h
+#include dos.h
+int x=1;
+void fun()
+{
+if(x==5)
+{
+printf("%d",x);
+x++;
+fun();
+}
+}
+void main()
+{
+clrscr();
+fun();
+delay(3000);
+}
+</pre>
+
+<h3>Output</h3>
+    <pre>12345 </pre>
+
+    
+         <h3>Question 3</h3>
+    <pre>Write a program of recursion with local variable and display the output.</pre>
+<h3>Coding</h3>
+    <pre>#include stdio.h
+#include conio.h
+#include dos.h
+void fun(int x)
+{
+if(x==5)
+{
+x++;
+fun(x);
+printf("%d",x);
+}
+}
+void main()
+{
+clrscr();
+fun();
+delay(3000);
+}
+</pre>
+
+<h3>Output</h3>
+    <pre>65432 </pre>
+
+</body>
+</html>

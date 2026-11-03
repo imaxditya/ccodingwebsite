@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <h3>Question 1</h3>
+    <pre>Write a program to show an example of pre-increment.</pre>
+<h3>Coding</h3>
+
+<pre>#include stdio.h
+#include conio.h
+#include dos.h
+void main()
+{
+ int x;
+clrscr();
+x=10;
+++x;
+  printf("%d",x);
+delay(2000);
+}
+</pre><h3> Output: <br>11
+</h3> 
+ <h3>Question 2</h3>
+    <pre>Write a program to show an example of pre-decrement.</pre>
+ <h3>Coding</h3>
+
+<pre>#include stdio.h
+#include conio.h
+#include dos.h
+void main()
+{
+int x;
+clrscr();
+x=12;
+--x;
+  printf("%d",x);
+delay(2000);
+}
+</pre>
+<h3>Output: <br> 11</h3>
+
+<h3>Question 3</h3>
+<pre>Write a program to enter 2 numbers from user, add the numbers and show the answer, again take 2 numbers <br>from user, subtract the numbers and display the answer, again take 2 numbers from user and multiply the <br>numbers and display the answer, again take 2 numbers from user, divide the numbers <br>and display the answer, and again take 2 numbers from user, find the remainder and display the answer?</pre>
+<h3>Coding</h3>
+
+<pre>#include stdio.h
+    #include dos.h
+#include conio.h 
+void main()
+{
+int sum, multiply, subtract, divide, remainder;
+int a,b;
+clrscr();
+    printf("enter the number:");
+    scanf("%d",&a);
+
+    printf("enter the number:");
+    scanf("%d",&b);
+    sum=a+b;
+    printf("sum=%d\n",sum);
+
+    printf("enter the number:");
+    scanf("%d",&a);
+
+    printf("enter the number:");
+    scanf("%d",&b);
+
+    subtract=a-b;
+    printf("subtract=%d\n",subtract);
+
+    printf("enter the number:");
+    scanf("%d",&a);
+
+    printf("enter the number:");
+    scanf("%d",&b);
+
+    multiply=a*b;
+    printf("multiply=%d\n",multiply);
+
+    printf("enter the number:"); 
+    scanf("%d",&a);
+
+    printf("enter the number:");
+    scanf("%d",&b);
+
+    divide=a/b;
+    printf("divide=%d\n",divide);
+
+    printf("enter the number:");
+    scanf("%d",&a);
+
+    printf("enter the number:");
+    scanf("%d",&b);
+
+    remainder=a%b;
+    printf("remainder=%d\n",remainder);
+delay(6000);
+}</pre>
+
+
+
+ <h3>Output</h3>
+    <pre>enter the number:23
+enter the number:34
+sum=57
+
+enter the number:78
+enter the number:56
+subtract=22
+
+enter the number:12
+enter the number:12
+multiply=144
+
+enter the number:45
+enter the number:5
+divide=9
+
+enter the number:78
+enter the number:10
+remainder=8</pre>
+
+ <h3>Question 4</h3>
+    <pre>Write a program to enter a number from the user. The length of the number depends on the user. The <br>programmer should print the last digit of the number.</pre>
+<h3>Coding</h3>
+
+<pre>
+#include stdio.h
+#include conio.h
+#include dos.h
+void main()
+{
+int n;
+clrscr();
+    printf("enter the number:");
+    scanf("%d",&n);
+
+    printf("Last digit=%d",n%10);
+delay(4000);
+}
+</pre>
+<h3>Output</h3>
+    <pre>enter the number:34567
+Last digit=7</pre>
+
+<h3>Question 5</h3>
+    <pre>Write a program to enter a decimal number from the user (float) and print the right-hand side of the decimal point?</pre>
+
+ <h3>Coding</h3>
+
+<pre>#include stdio.h
+#include conio.h
+#include dos.h
+void main()
+{
+float num;
+int decimal;
+    printf("enter the decimal number:");
+    scanf("%f",&num);
+
+  decimal=((int)(num*10))%10;
+    printf("Right-hand digit=%d",decimal);
+delay(4000);
+}
+</pre>
+
+<h3>Output</h3>
+    <pre>Enter a decimal number: 12.5
+Right-hand digit = 5</pre>
+
+
+
+    <h3>Question 6</h3>
+    <pre>Write a program to enter a number from the user and find out the cube of the number.</pre>
+
+
+
+    <h3>Coding</h3>
+
+<pre>#include stdio.h
+
+void main()
+{
+    int num, cube;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    cube = num * num * num;
+
+    printf("Cube of number = %d", cube);
+}
+</pre>
+
+<h3>Output</h3>
+    <pre>Enter a number: 5
+Cube of number = 125</pre>
+ <h3>Question 7</h3>
+    <pre>Write a program to enter marks of students and calculate the average of students' marks.</pre>
+ <h3>Coding</h3>
+
+<pre>
+#include stdio.h
+#include conio.h
+#include dos.h
+
+void main()
+{
+int a,b,c;
+float average;
+clrscr();
+    printf("enter the marks:");
+    scanf("%d",&a);
+
+    printf("enter the marks:");
+    scanf("%d",&b);
+
+    printf("enter the marks:");
+    scanf("%d",&c);
+
+    average=(a+b+c)/3;
+    printf("average=%f",average);
+
+delay(4000);
+}
+</pre>
+
+ <h3>Output</h3>
+    <pre>Enter marks of three subjects: 80 70 90
+Average marks = 80.00</pre>
+<h3>Question 8</h3>
+    <pre>Write a program to calculate simple interest using the formula SI = (P x R x T) / 100.</pre>
+<h3>Coding</h3>
+
+<pre>
+#include stdio.h
+#include dos.h 
+#imclude conio.h 
+void main()
+{
+float p,r,t,si;
+clrscr();
+    printf("enter the principal:");
+    scanf("%f",&p);
+
+    printf("enter the rate:");
+    scanf("%f",&r);
+
+    printf("enter the time:");
+    scanf("%f",&t);
+
+  si=(p*r*t)/100;
+    printf("Simple Interest=%f",si);
+
+delay(3000);
+}
+</pre>
+
+<h3>Output</h3>
+    <pre>enter the principal:1000
+enter the rate:5
+enter the time:2
+Simple Interest:100.000000</pre>
+</body>
+</html>

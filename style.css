@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+a {
+    text-decoration:none;
+}
+
+a h2 {
+    color:white;
+}
+h1{
+    color:cyan;
+}
+
+
